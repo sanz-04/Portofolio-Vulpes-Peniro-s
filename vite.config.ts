@@ -2,6 +2,14 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig, loadEnv} from 'vite';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vite.js.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  base: '/nama_repository_kamu/', // GANTI DENGAN NAMA REPO GITHUB-MU
+
 
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
@@ -21,4 +29,5 @@ export default defineConfig(({mode}) => {
       hmr: process.env.DISABLE_HMR !== 'true',
     },
   };
+})
 });
