@@ -6,6 +6,6 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react()],
     // GANTI 'nama_repository_kamu' dengan nama repo GitHub-mu (contoh: '/portofolio/')
-    base: '/nama_repository_kamu/', 
+    base: '/https://github.com/sanz-04/Portofolio-Vulpes-Peniro-s.git/', 
   }
 })
